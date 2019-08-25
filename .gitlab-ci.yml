@@ -32,7 +32,7 @@ test2:
 deploy:
   stage: deploy
   script:
-    - mv /var/www/* /tmp
+    - rm -rf /var/www/* 
     - cp -r * /var/www/
     - mysql -e 'DROP DATABASE db_users;CREATE DATABASE db_users;' -u root -p p5vdc-mx
     - mysql -u root -p p5vdc-mx db_users < /var/www/db/users.sql
