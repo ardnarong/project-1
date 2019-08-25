@@ -29,7 +29,12 @@ test2:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
-deploy1:
+pages:
   stage: deploy
   script:
-    - echo "Do your deploy here"
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
