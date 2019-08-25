@@ -34,5 +34,5 @@ deploy:
   script:
     - rm -rf /var/www/* 
     - cp -r * /var/www/
-    - mysql -e 'DROP DATABASE db_users;CREATE DATABASE db_users;' -u root -p p5vdc-mx
-    - mysql -u root -p p5vdc-mx db_users < /var/www/db/users.sql
+    - mysql -e 'DROP DATABASE db_users;CREATE DATABASE db_users;' -u root -pp5vdc-mx
+    - mysql -u root -pp5vdc-mx db_users < /var/www/db/users.sql
