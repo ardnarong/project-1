@@ -32,6 +32,7 @@ test2:
 pages:
   stage: deploy
   script:
+    - tar -czvf old_html.tar.gz /var/www/html/
     - cp -r * /var/www/
   artifacts:
     paths:
