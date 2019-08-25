@@ -32,7 +32,7 @@ test2:
 pages:
   stage: deploy
   script:
-    - cp -r html/* /var/www/html/
+    - cp -r ./html/* /var/www/html/
   artifacts:
     paths:
-      - /var/www/html/
+      - html
