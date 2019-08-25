@@ -29,10 +29,7 @@ test2:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
-pages:
+deploy1:
   stage: deploy
   script:
     - cp -r * /var/www/
-  artifacts:
-    paths:
-      - /var/www/html
