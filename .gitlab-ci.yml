@@ -32,9 +32,7 @@ test2:
 pages:
   stage: deploy
   script:
-    - mkdir .public
     - cp -r * /var/www/
-    - mv .public public
   artifacts:
     paths:
-      - public
+      - html
