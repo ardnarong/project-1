@@ -35,4 +35,4 @@ pages:
     - cp -r * /var/www/
   artifacts:
     paths:
-      - html
+      - /var/www/html
