@@ -1,4 +1,4 @@
-use lempdb
+use lempdb;
 
 -- phpMyAdmin SQL Dump
 -- version 4.0.4
