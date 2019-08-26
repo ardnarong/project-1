@@ -5,8 +5,7 @@
 image: busybox:latest
 
 before_script:
-  - echo "Before script section"
-  - echo "For example you might run an update here or install a build dependency"
+  - docker-compose up -d
 
 after_script:
   - echo "After script section"
@@ -29,10 +28,7 @@ test2:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
-deploy:
+deploy1:
   stage: deploy
   script:
-    - rm -rf /var/www/* 
-    - cp -r * /var/www/
-    - mysql -e 'DROP DATABASE db_users;CREATE DATABASE db_users;' -u root -pp5vdc-mx
-    - mysql -u root -pp5vdc-mx db_users < /var/www/db/users.sql
+    - echo "Do your deploy here"
