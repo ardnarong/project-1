@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'mariadb',
+	'dsn'	=> 'mysql:host=mariadb; dbname=lempdb; charset=utf8;',
+	'hostname' => '',
 	'username' => 'root',
 	'password' => 'p5vdc-mx',
-	'database' => 'db_users',
+	'database' => 'lempdb',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
