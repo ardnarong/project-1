@@ -15,10 +15,9 @@ after_script:
   - echo "After script section"
   - echo "For example you might do some cleanup here"
 
-build:
+build1:
+  stage: build
   script:
-    - sudo apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
-    - sudo pip install docker-compose
     - sudo docker-compose up -d
 
 test1:
