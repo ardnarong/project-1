@@ -2,7 +2,10 @@
 # see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
 
 # you can delete this line if you're not using Docker
-image: busybox:latest
+image: docker
+
+services:
+  - docker:dind    
 
 before_script:
   - docker-compose up -d
@@ -11,10 +14,11 @@ after_script:
   - echo "After script section"
   - echo "For example you might do some cleanup here"
 
-build1:
-  stage: build
+build:
   script:
-    - echo "Do your build here"
+    - apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
+    - pip install docker-compose
+    - docker-compose up -d
 
 test1:
   stage: test
