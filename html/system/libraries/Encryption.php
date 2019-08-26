@@ -782,7 +782,6 @@ class CI_Encryption {
 					'aes-128' => 'rijndael-128',
 					'aes-192' => 'rijndael-128',
 					'aes-256' => 'rijndael-128',
-					'des3-ede3' => 'tripledes',
 					'bf' => 'blowfish',
 					'cast5' => 'cast-128',
 					'rc4' => 'arcfour',

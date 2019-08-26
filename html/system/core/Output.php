@@ -765,7 +765,8 @@ class CI_Output {
 
 		if ( ! @unlink($cache_path))
 		{
-			log_message('error', 'Unable to delete cache file for '.$uri);
+			log_message('error', 'Unable to delete cache file for ');
+			//log_message('error', 'Unable to delete cache file for '.$uri);
 			return FALSE;
 		}
 
