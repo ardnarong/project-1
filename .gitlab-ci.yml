@@ -19,7 +19,8 @@ build:
   stage: build
   script:
     - echo "Do a build here"
-
+    - sudo docker-compose down && sudo docker-compose up -d
+    
 test1:
   stage: test
   script:
@@ -42,4 +43,3 @@ deploy1:
   stage: deploy
   script:
     - echo "Do your deploy here"
-    - sudo docker-compose down && sudo docker-compose up -d

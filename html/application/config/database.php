@@ -76,8 +76,8 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=mariadb; dbname=lempdb; charset=utf8;',
 	'hostname' => '',
-	'username' => 'root',
-	'password' => 'p5vdc-mx',
+	'username' => 'lemp',
+	'password' => 'lemppassword',
 	'database' => 'lempdb',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
