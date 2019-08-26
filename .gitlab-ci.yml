@@ -8,7 +8,8 @@ services:
   - docker:dind    
 
 before_script:
-  - docker-compose up -d
+  - sudo docker info
+  - sudo docker-compose --version
 
 after_script:
   - echo "After script section"
