@@ -21,25 +21,19 @@ build:
     - echo "Do a build here"
     - sudo docker-compose down && sudo docker-compose up -d
     
-test1:
+test-sonarqube:
   stage: test
   script:
     - echo "Do a test here"
     - echo "For example run a test suite"
 
-test2:
+test-phpunit:
   stage: test
   script:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
-test3:
-  stage: test
-  script:
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
-
-deploy1:
+deploy-testserver:
   stage: deploy
   script:
     - echo "Do your deploy here"
