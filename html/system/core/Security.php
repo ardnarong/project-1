@@ -497,8 +497,8 @@ class CI_Security {
 		 * If a tag containing any of the words in the list
 		 * below is found, the tag gets converted to entities.
 		 *
-		 * So this: <blink>
-		 * Becomes: &lt;blink&gt;
+		 * So this: <img>
+		 * Becomes: &lt;img&gt;
 		 */
 		$pattern = '#'
 			.'<((?<slash>/*\s*)((?<tagName>[a-z0-9]+)(?=[^a-z0-9]|$)|.+)' // tag start and name, followed by a non-tag character
