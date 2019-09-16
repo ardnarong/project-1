@@ -74,12 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'kishor10d',
-	'dbdriver' => 'mysqli',
+	'dsn'	=> 'mysql:host=mariadb; dbname=lempdb; charset=utf8;',
+	'hostname' => '',
+	'username' => 'lemp',
+	'password' => 'lemppassword',
+	'database' => 'lempdb',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

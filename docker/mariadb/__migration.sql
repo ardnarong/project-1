@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2019 at 06:15 PM
+-- Generation Time: Sep 16, 2019 at 06:06 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -19,10 +19,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `neis0736_mut_2019`
+-- Database: `kishor10d`
 --
-CREATE DATABASE IF NOT EXISTS `neis0736_mut_2019` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `neis0736_mut_2019`;
 
 -- --------------------------------------------------------
 

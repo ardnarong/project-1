@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'mysql:host=mariadb; dbname=lempdb; charset=utf8;',
+	'dsn'	=> 'mysql:host=mariadb; dbname=neis0736_mut_2019; charset=utf8;',
 	'hostname' => '',
 	'username' => 'lemp',
 	'password' => 'lemppassword',
-	'database' => 'lempdb',
+	'database' => 'neis0736_mut_2019',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
