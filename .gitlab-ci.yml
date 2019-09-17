@@ -23,18 +23,24 @@ build:
     
 test-sonarqube:
   stage: test
+  tags:
+    - test
   script:
     - echo "Do a test here"
     - echo "For example run a test suite"
 
 test-phpunit:
   stage: test
+  tags:
+    - test
   script:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
 deploy-testserver:
   stage: deploy
+  tags:
+    - test
   script:
     - echo "Do your deploy here"
 
