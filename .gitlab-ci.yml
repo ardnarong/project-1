@@ -33,7 +33,10 @@ test-phpunit:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
 
-deploy-testserver:
+test3:
+  stage: test
+  script:
+    - echo "Do another parallel test here"
   stage: deploy
   script:
     - echo "Do your deploy here"
