@@ -10,6 +10,8 @@ services:
 before_script:
   - sudo docker info
   - sudo docker-compose --version
+  - sudo export PATH=$PATH:/root/sonar-scanner-4.0.0.1744-linux/bin/
+  - sudo sonar-scanner -v
 
 after_script:
   - echo "After script section"
