@@ -27,7 +27,7 @@ test-sonarqube:
     - test
   script:
     - echo "Do a test here"
-    - sonar-scanner -Dsonar.projectKey=project-1 -Dsonar.sources=. -Dsonar.host.url=http://167.179.92.13 -Dsonar.login=e6f1b42c6327d7adb72cc4db108bca2b334e6e52
+    - sonar-scanner 
 
 test-phpunit:
   stage: test
