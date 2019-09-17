@@ -27,6 +27,7 @@ test-sonarqube:
     - test
   script:
     - echo "Do a test here"
+    - sonar-scanner 
 
 test-phpunit:
   stage: test
