@@ -10,7 +10,6 @@ services:
 before_script:
   - sudo docker info
   - sudo docker-compose --version
-  #- sudo chown -R gitlab-runner:gitlab-runner *
   #- sudo rm -rf .scannerwork/
   #- sudo sonar-scanner -v
 
