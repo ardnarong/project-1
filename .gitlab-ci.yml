@@ -34,7 +34,7 @@ test-phpunit:
   stage: test
   script:
     - echo "Do another parallel test here"
-    - echo "For example run a lint test"
+    - phpunit --version
 
 deploy-testserver:
   stage: deploy
