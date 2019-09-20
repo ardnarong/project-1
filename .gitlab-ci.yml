@@ -21,6 +21,7 @@ build:
   stage: build
   script:
     - echo "Do a build here"
+    - phpunit --version
     - sudo docker-compose down && sudo docker-compose up -d
     
 test-sonarqube:
@@ -34,7 +35,7 @@ test-phpunit:
   stage: test
   script:
     - echo "Do another parallel test here"
-    - phpunit --version
+    - /usr/bin/phpunit --bootstrap ./html/tests/Email.php ./html/tests/EmailTest
 
 deploy-testserver:
   stage: deploy
