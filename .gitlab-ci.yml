@@ -10,7 +10,6 @@ services:
 before_script:
   - sudo docker info
   - sudo docker-compose --version
-  #- sudo rm -rf .scannerwork/
   #- sudo sonar-scanner -v
 
 after_script:
